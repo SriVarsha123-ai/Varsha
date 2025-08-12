@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Dance Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+             }
+
+        .container {
+            background: #d2b4de;
+            padding: 20px;
+            margin:auto;
+            width: 500px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            background: #1f618d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        
+        .form-group {
+            text-align: left;
+        }
+
+        label {
+            align-items:center;
+            display: flex;
+            
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+          }
+
+        .form-field {
+            width:90%;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="color:#1f618d;text-align:center">Dance Competition Registration</h2>
+        <form>
+            <div class="form-group">
+                <label style="font-weight:bold">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label style="font-weight:bold">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label style="font-weight:bold">Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter Phone Number">
+            </div>
+            <label style="font-weight:bold"> Date of Birth</label>
+            <input type="date" name="dob" required>
+
+            <label style="font-weight:bold">Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="others" required> Others</label>
+            </div><br>
+
+            <div>
+                <label style="font-weight:bold">Address</label>
+                <textarea name="address"rows="3"cols="60" required></textarea>
+            </div><br>
+
+            <label style="font-weight:bold"> Dance Style</label>
+            <select class="form-field" required>
+                <option value="" >--select a style--</option>
+                <option value="Hip Hop">Hip Hop</option>
+                <option value="Salsa">Salsa</option>
+                <option value="Classical">Classical</option>
+                <option value="Belly">Belly</option>
+            </select><br>
+            <label style="font-weight:bold">Languages Known </label>
+    <div class="radio-group">
+      <label><input type="checkbox" name="lang" value="Hindi" required >Hindi</label>
+      <label><input type="checkbox" name="lang" value="Telugu" >Telugu</label>
+      <label><input type="checkbox" name="lang" value="English" >English </label>
+      <label><input type="checkbox" name="lang" value="Tamil" >Tamil </label>
+      <label><input type="checkbox" name="lang" value="Kannada" >Kannada</label>
+    </div><br>
+
+            <label style="font-weight:bold">Payment Method</label>
+            <select class="form-field" required>
+                <option value="" >--select a mode--</option>
+                <option value="upi">UPI</option>
+                <option value="credit card">Credit Card</option>
+                <option value="debit card">Debit Card</option>
+                <option value="Net banking">Net Banking</option>
+            </select><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
